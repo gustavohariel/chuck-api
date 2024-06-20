@@ -1,7 +1,9 @@
 import { Module } from '@nestjs/common';
+import { ChuckModule } from './chuck.module';
+
 
 @Module({
-  imports: [],
+  imports: [ChuckModule],
   controllers: [],
   providers: [],
 })
