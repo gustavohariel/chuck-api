@@ -30,4 +30,7 @@ export class ChuckService {
     return this.httpService.get(url);
   }
 
+  getJokeCategories(): Observable<AxiosResponse<String>> {
+    return this.httpService.get(this.apiUrl + '/jokes/categories');
+  }
 }

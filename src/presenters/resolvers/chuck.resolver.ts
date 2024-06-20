@@ -17,4 +17,12 @@ export class ChuckResolver {
     );
     return response.data;
   }
+
+  @Query(() => [String])
+  async jokeCategories() {
+    const response = await firstValueFrom(
+      this.chuckService.getJokeCategories(),
+    );
+    return response.data;
+  }
 }
