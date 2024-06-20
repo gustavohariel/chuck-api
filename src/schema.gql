@@ -12,7 +12,13 @@ type Joke {
   value: String!
 }
 
+type JokeSearchResult {
+  total: Int!
+  result: [Joke!]
+}
+
 type Query {
   randomJoke(category: String, name: String): Joke!
   jokeCategories: [String!]!
+  searchJoke(query: String!): JokeSearchResult!
 }

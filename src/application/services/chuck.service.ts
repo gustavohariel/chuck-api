@@ -33,4 +33,8 @@ export class ChuckService {
   getJokeCategories(): Observable<AxiosResponse<String>> {
     return this.httpService.get(this.apiUrl + '/jokes/categories');
   }
+
+  searchJoke(query: string): Observable<AxiosResponse<String>> {
+    return this.httpService.get(`${this.apiUrl}/jokes/search?query=${query}`);
+  }
 }
