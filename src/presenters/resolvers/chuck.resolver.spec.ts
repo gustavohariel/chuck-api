@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ChuckResolver } from './chuck.resolver';
-import { ChuckService } from 'src/application/services/chuck.service';
+import { ChuckService } from '../../application/services/chuck.service';
 
 describe('ChuckResolver', () => {
   let resolver: ChuckResolver;

@@ -1,7 +1,7 @@
 import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
-import { ChuckService } from 'src/application/services/chuck.service';
-import { ChuckResolver } from 'src/presenters/resolvers/chuck.resolver';
+import { ChuckService } from '../../application/services/chuck.service';
+import { ChuckResolver } from '../../presenters/resolvers/chuck.resolver';
 
 @Module({
   imports: [HttpModule],
