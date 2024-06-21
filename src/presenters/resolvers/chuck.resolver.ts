@@ -1,8 +1,8 @@
 import { Args, Query, Resolver } from '@nestjs/graphql';
 import { firstValueFrom } from 'rxjs';
 import { ChuckService } from 'src/application/services/chuck.service';
-import { JokeSearchResult } from 'src/domain/entities/chuck/joke-search-result';
-import { Joke } from 'src/domain/entities/chuck/joke.entity';
+import { JokeSearchResult } from '../../domain/entities/chuck/joke-search-result';
+import { Joke } from '../../domain/entities/chuck/joke.entity';
 
 @Resolver()
 export class ChuckResolver {
