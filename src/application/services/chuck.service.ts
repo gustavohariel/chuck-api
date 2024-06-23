@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { AxiosResponse } from 'axios';
 import { Observable } from 'rxjs';
-import { Joke } from '../../domain/entities/chuck/joke.entity';
+import { Joke } from '@domain/entities/chuck/joke.entity';
 
 @Injectable()
 export class ChuckService {
